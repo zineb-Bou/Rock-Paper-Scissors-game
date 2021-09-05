@@ -13,3 +13,47 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.header {
+  border: 2px solid var(--Header-Outline);
+  border-radius: 20px;
+  margin-top: 32px;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.header .logo {
+  margin-left: 18px;
+}
+.score-tag {
+  font-weight: 600;
+  color: var(--lime-green);
+  font-size: 18px;
+  display: block;
+}
+.display-score {
+  margin-right: 18px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+.score-tag {
+  font-weight: 600;
+  color: var(--lime-green);
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.score-number {
+  font-weight: 600;
+  color: var(--Dark-Text);
+  font-size: 64px;
+  display: block;
+}
