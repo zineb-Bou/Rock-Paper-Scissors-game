@@ -13,6 +13,18 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+/* fltter when opening the rules module */
+.filtter {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0.6;
+  visibility: hidden;
+}
+.filtter.show-it {
+  visibility: visible;
 .header {
   border: 2px solid var(--Header-Outline);
   border-radius: 20px;
