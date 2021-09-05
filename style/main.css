@@ -57,6 +57,78 @@ body {
   font-size: 64px;
   display: block;
 }
+.main {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  position: relative;
+}
+.circle-inside {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 10px 2px #e1e4ed;
+}
+.Scissors {
+  /* Lime-Green */
+  border: 15px solid var(--lime-green);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 8px 0px #537f6c);
+  border-radius: 100px;
+  position: absolute;
+  top: -60px;
+  left: 270px;
+}
+.Paper {
+  /* EggPLant */
+  border: 15px solid var(--EggPLant);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 8px 0px #361121);
+  border-radius: 100px;
+  position: absolute;
+  top: 60px;
+  right: 130px;
+}
+
+.Rock {
+  /* Light_Pinkish_Grey */
+  border: 15px solid var(--Light_Pinkish_Grey);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 8px 0px #cb9c8f);
+  border-radius: 100px;
+  position: absolute;
+  top: 60px;
+  left: 130px;
+}
+
+.Spock {
+  /* Dark-Orange */
+  border: 15px solid var(--Dark-Orange);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 8px 0px #c24e33);
+  border-radius: 100px;
+  position: absolute;
+  top: 230px;
+  left: 160px;
+}
+
+.Lizard {
+  /* Sandy-Yellow */
+  border: 15px solid var(--Sandy-Yellow);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 8px 0px #e2b26d);
+  border-radius: 100px;
+  position: absolute;
+  top: 230px;
+  right: 160px;
+}
 
 /* footer  */
 .footer {
