@@ -25,6 +25,7 @@ body {
 }
 .filtter.show-it {
   visibility: visible;
+}
 .header {
   border: 2px solid var(--Header-Outline);
   border-radius: 20px;
@@ -153,7 +154,7 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-.rules {
+.rule-btn {
   margin-right: 32px;
   background-color: transparent;
   font-weight: 600;
@@ -164,4 +165,39 @@ body {
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px 40px;
+}
+
+/* ruels model  */
+.modal-window {
+  position: fixed;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+}
+.modal-window.open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.close-btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  border: none;
+  background-color: transparent;
+}
+.rules-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
