@@ -258,3 +258,97 @@ body {
   }
 }
 
+/* Screens < 400px  */
+@media (max-width: 400px) {
+  .bg-pentagon {
+    width: 200px;
+    height: 180px;
+    viewbox: '0 0 200 180';
+  }
+  .header {
+    min-width: 250px;
+  }
+  .score-number {
+    font-size: 32px;
+  }
+  .display-score {
+    height: 90px;
+    margin-right: 18px;
+    padding: 0 10px;
+  }
+  .score-tag {
+    font-size: 12px;
+  }
+  .circle-inside {
+    width: 50px;
+    height: 50px;
+  }
+  .main {
+    margin-top: 90px;
+    width: 200px;
+  }
+  .Scissors {
+    top: -50px;
+    left: 60px;
+  }
+  .scissors-icon {
+    width: 30px;
+    height: 40px;
+    viewbox: '0 0 30 40';
+  }
+  .Paper {
+    top: 40px;
+    right: -20px;
+  }
+  .paper-icon {
+    width: 30px;
+    height: 40px;
+    viewbox: '0 0 30 40';
+  }
+
+  .Rock {
+    top: 40px;
+    left: -20px;
+  }
+  .rock-icon {
+    width: 30px;
+    height: 40px;
+    viewbox: '0 0 30 40';
+  }
+
+  .Spock {
+    top: 140px;
+    right: 10px;
+  }
+  .spock-icon {
+    width: 30px;
+    height: 40px;
+    viewbox: '0 0 30 40';
+  }
+  .spock-icon {
+    width: 30px;
+    height: 40px;
+    viewbox: '0 0 30 40';
+  }
+
+  .Lizard {
+    top: 140px;
+    left: 10px;
+  }
+  .lizard-icon {
+    width: 30px;
+    height: 40px;
+    viewbox: '0 0 30 40';
+  }
+
+  /* ruel model  */
+  .modal-window {
+    width: 250px;
+    height: 350px;
+  }
+  .rules-img {
+    width: 240px;
+    height: 270px;
+    viewbox: '0 0 240 270';
+  }
+}
