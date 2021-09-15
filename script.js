@@ -1,31 +1,31 @@
-// $('.rule-btn').on('click', function () {
-//   $('#open-modal').addClass('open');
-//   $('.filtter').addClass('show-it');
+$('.rule-btn').on('click', function () {
+  $('#open-modal').addClass('open');
+  $('.filtter').addClass('show-it');
+});
+$('.close-btn').on('click', function () {
+  $('#open-modal').removeClass('open');
+  $('.filtter').removeClass('show-it');
+});
+
+// Select a choice
+
+// $('.Scissors').on('click', function () {
+//   $('.choices').addClass('make-invisible ');
+//   $('.user-choice').addClass('Scissors');
 // });
-// $('.close-btn').on('click', function () {
-//   $('#open-modal').removeClass('open');
-//   $('.filtter').removeClass('show-it');
+
+// $('.Paper').on('click', function () {
+//   $('.choices').addClass('make-invisible ');
 // });
 
-// // Select a choice
+// $('.Rock').on('click', function () {
+//   $('.choices').addClass('make-invisible ');
+// });
 
-// // $('.Scissors').on('click', function () {
-// //   $('.choices').addClass('make-invisible ');
-// //   $('.user-choice').addClass('Scissors');
-// // });
+// $('.Spock').on('click', function () {
+//   $('.choices').addClass('make-invisible ');
+// });
 
-// // $('.Paper').on('click', function () {
-// //   $('.choices').addClass('make-invisible ');
-// // });
-
-// // $('.Rock').on('click', function () {
-// //   $('.choices').addClass('make-invisible ');
-// // });
-
-// // $('.Spock').on('click', function () {
-// //   $('.choices').addClass('make-invisible ');
-// // });
-
-// // $('.Lizard').on('click', function () {
-// //   $('.choices').addClass('make-invisible ');
-// // });
+// $('.Lizard').on('click', function () {
+//   $('.choices').addClass('make-invisible ');
+// });
