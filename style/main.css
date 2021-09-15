@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+:root {
+  /* Neutral */
 
-@import 'style.css';
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Header-Outline: hsl(217, 16%, 45%);
+
+  /* Background */
+
+  --Navy-Blue-Gradiant: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+
+  /* circle colors  */
+
+  --lime-green: #75a791;
+  --Dark-Orange: #dd7057;
+  --Light_Pinkish_Grey: #efbaac;
+  --Sandy-Yellow: #efd1a6;
+  --Sky-blue: #4d6af4;
+}
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
@@ -74,7 +90,7 @@ body {
   display: block;
 }
 .main {
-  width: 300px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -82,70 +98,54 @@ body {
   margin-top: 90px;
   position: relative;
 }
-.circle-inside {
+.circle {
+  /* Lime-Green */
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 1000px;
   background-color: white;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0px 10px 2px #e1e4ed;
+}
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 115px;
+  height: 115px;
+  border-radius: 100px;
+  box-shadow: inset 0px 12px 2px #e1e4ed;
 }
 .Scissors {
   /* Lime-Green */
-  border: 15px solid var(--lime-green);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 8px 0px #537f6c);
-  border-radius: 100px;
+  border: 18px solid var(--lime-green);
+  filter: drop-shadow(0px 10px 0px #537f6c);
   position: absolute;
   top: -60px;
-  left: 90px;
+  left: 60px;
 }
+
 .Paper {
   /* EggPLant */
-  border: 15px solid var(--EggPLant);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 8px 0px #361121);
-  border-radius: 100px;
+  border: 18px solid var(--Dark-Orange);
+  filter: drop-shadow(0px 8px 0px #e15131);
   position: absolute;
-  top: 60px;
-  right: -40px;
+  top: -60px;
+  right: 60px;
 }
 
 .Rock {
   /* Light_Pinkish_Grey */
-  border: 15px solid var(--Light_Pinkish_Grey);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 8px 0px #cb9c8f);
-  border-radius: 100px;
+  border: 18px solid var(--Sky-blue);
+  filter: drop-shadow(0px 8px 0px #2a45c2);
   position: absolute;
-  top: 230px;
-  right: -10px;
+  bottom: -60px;
+  left: 220px;
 }
 
-.Spock {
-  /* Dark-Orange */
-  border: 15px solid var(--Dark-Orange);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 8px 0px #c24e33);
-  border-radius: 100px;
-  position: absolute;
-  top: 60px;
-  left: -40px;
-}
-
-.Lizard {
-  /* Sandy-Yellow */
-  border: 15px solid var(--Sandy-Yellow);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 8px 0px #e2b26d);
-  border-radius: 100px;
-  position: absolute;
-  top: 230px;
-  left: -10px;
-}
-
+/* footer  */
 .rule-btn {
   background-color: transparent;
   font-weight: 600;
@@ -197,7 +197,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .bg-pentagon {
+  .bg-triangle {
     width: 290px;
     height: 250px;
     viewbox: '0 0 290 250';
@@ -216,57 +216,46 @@ body {
   .score-tag {
     font-size: 14px;
   }
-  .circle-inside {
-    width: 80px;
-    height: 80px;
+  .circle {
+    width: 130px;
+    height: 130px;
+  }
+  .circle:before {
+    width: 95px;
+    height: 95px;
   }
   .main {
     margin-top: 90px;
   }
   .Scissors {
     top: -60px;
-    left: 100px;
+    left: 120px;
   }
   .Paper {
-    top: 60px;
-    right: -40px;
+    top: -60px;
+    right: 120px;
   }
 
   .Rock {
     top: 190px;
-    right: 10px;
+    left: 230px;
   }
 
-  .Spock {
-    top: 60px;
-    left: -40px;
-  }
-
-  .Lizard {
-    top: 190px;
-    left: 10px;
-  }
   .rule-btn {
     font-size: 12px;
     letter-spacing: 4px;
     padding: 10px 20px;
   }
 
-  /* ruel model  */
   .modal-window {
-    width: 300px;
+    width: 350px;
     height: 400px;
-  }
-  .rules-img {
-    width: 280px;
-    height: 350px;
-    viewbox: '0 0 290 300';
+    object-fit: contain;
   }
 }
 
-/* Screens < 400px  */
 @media (max-width: 400px) {
-  .bg-pentagon {
+  .bg-triangle {
     width: 200px;
     height: 180px;
     viewbox: '0 0 200 180';
@@ -285,69 +274,49 @@ body {
   .score-tag {
     font-size: 12px;
   }
-  .circle-inside {
-    width: 50px;
-    height: 50px;
+  .circle {
+    width: 100px;
+    height: 100px;
+    border: 15px;
+  }
+  .circle::before {
+    width: 75px;
+    height: 75px;
   }
   .main {
     margin-top: 90px;
     width: 200px;
   }
   .Scissors {
-    top: -50px;
-    left: 60px;
+    border: 12px solid var(--lime-green);
+    left: -40px;
   }
   .scissors-icon {
-    width: 30px;
+    width: 50px;
     height: 40px;
     viewbox: '0 0 30 40';
   }
   .Paper {
-    top: 40px;
-    right: -20px;
+    right: -40px;
+    border: 12px solid var(--Dark-Orange);
   }
   .paper-icon {
-    width: 30px;
+    width: 40px;
     height: 40px;
     viewbox: '0 0 30 40';
   }
 
   .Rock {
-    top: 140px;
-    right: 10px;
+    top: 120px;
+    left: 50px;
+    border: 12px solid var(--Sky-blue);
   }
   .rock-icon {
-    width: 30px;
+    width: 40px;
     height: 40px;
     viewbox: '0 0 30 40';
   }
 
-  .Spock {
-    top: 40px;
-    left: -20px;
-  }
-  .spock-icon {
-    width: 30px;
-    height: 40px;
-    viewbox: '0 0 30 40';
-  }
-  .spock-icon {
-    width: 30px;
-    height: 40px;
-    viewbox: '0 0 30 40';
-  }
-
-  .Lizard {
-    top: 140px;
-    left: 10px;
-  }
-  .lizard-icon {
-    width: 30px;
-    height: 40px;
-    viewbox: '0 0 30 40';
-  }
-
-  /* ruel model  */
   .modal-window {
     width: 250px;
     height: 350px;
@@ -355,6 +324,6 @@ body {
   .rules-img {
     width: 240px;
     height: 270px;
-    viewbox: '0 0 240 270';
+    object-fit: contain;
   }
 }
